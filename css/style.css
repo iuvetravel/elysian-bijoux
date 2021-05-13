@@ -328,11 +328,13 @@ h4 {
   grid-template-columns: repeat(4, 1fr);
   margin: 4rem 0;
 }
-
+.primary-title {
+  color: #0f7be4;
+}
 .product {
   display: flex;
   flex-direction: column;
-  padding: 0;
+  padding: 0 0 2rem 0;
   text-align: center;
   transition: all 0.5s ease;
   border-radius: 2rem;
@@ -341,6 +343,12 @@ h4 {
   height: 50rem;
   overflow: hidden;
   border-radius: 2rem 2rem 0 0;
+}
+.product a {
+  background-color: #3291eb;
+  padding: 0.5rem 2rem;
+  border-radius: 3rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .img-container img {
@@ -353,14 +361,27 @@ h4 {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   background-color: #3291eb;
   color: #fff;
+  font-weight: 700;
   transform: translateY(-2rem);
 }
 .product-bottom a {
   color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.product-bottom a:hover {
+  background-color: #fff;
+  color: #3291eb;
+  padding: 0.5rem 2rem;
+  border-radius: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .product-bottom:hover {
   color: #ffc300;
   font-weight: bold;
+}
+.rating .fa {
+  font-size: 2rem;
+  font-weight: 100;
 }
 /* =========================================================================
 ========================================================================= */
