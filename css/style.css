@@ -576,7 +576,7 @@ h4 {
     grid-template-columns: 1fr;
   }
   .product .img-container {
-    height: 36rem;
+    height: 37.5rem;
     overflow: hidden;
     border-radius: 2rem 2rem 0 0;
   }
