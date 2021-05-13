@@ -355,7 +355,13 @@ h4 {
   color: #fff;
   transform: translateY(-2rem);
 }
-
+.product-bottom a {
+  color: #fff;
+}
+.product-bottom:hover {
+  color: #ffc300;
+  font-weight: bold;
+}
 /* =========================================================================
 ========================================================================= */
 @media only screen and (max-width: 996px) {
