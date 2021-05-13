@@ -77,7 +77,8 @@ h4 {
 /* =============Navigation=============== */
 
 .navigation {
-  position: relative;
+  position: fixed;
+  width: 100%;
   padding: 1.5rem 0;
   z-index: 100;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -202,6 +203,91 @@ h4 {
   font-size: 1.5rem;
   background-color: #ff5300;
 }
+
+/* Hero */
+.hero {
+  height: 100vh;
+  position: relative;
+  text-align: center;
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: var(--medium);
+}
+.navigation.fix-nav .hero .hero-content {
+  top: 70%;
+}
+
+.hero-content h1 {
+  font-size: 8rem;
+  font-weight: 900;
+  margin-bottom: 5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.hero-content h1 span {
+  display: block;
+  line-height: 1.2;
+}
+
+.hero-content h1 span.color {
+  display: inline-block;
+  color: #00be7b;
+}
+
+.btn-hero:link,
+.btn-hero:visited {
+  display: inline-block;
+  color: #0662ba;
+  font-weight: bold;
+  padding: 1rem 4rem;
+  border-radius: 4rem;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.5s ease;
+}
+.btn-hero:hover {
+  background-color: #fff;
+  color: #00be7b;
+}
+.goto-next {
+  position: absolute;
+  bottom: 38%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  animation: bounce 2s linear infinite;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.goto-next img {
+  height: 5.8rem;
+  width: 5.8rem;
+}
+
+.goto-next span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 20%;
+  }
+  50% {
+    bottom: 13%;
+  }
+  100% {
+    bottom: 20%;
+  }
+}
 /* =========================================================================
 ========================================================================= */
 @media only screen and (max-width: 996px) {
@@ -219,13 +305,33 @@ h4 {
 /* ======================================================================================
 ====================================================================================== */
 @media only screen and (max-width: 768px) {
+  .navigation {
+    position: fixed;
+    width: 100%;
+  }
+  .nav-menu .menu-top h1 {
+    font-weight: 100;
+    color: #0f7be4;
+  }
+
+  .nav-menu .menu-top span {
+    color: #00be7b;
+    font-weight: 100;
+  }
+  .nav-header .nav-logo h1 {
+    color: #0f7be4;
+  }
+  .nav-header .nav-logo h1 span {
+    color: #00be7b;
+  }
+
   .header {
     max-width: 100vw;
     min-height: 100vh;
     background: linear-gradient(
         to right,
-        rgba(116, 235, 213, 0.6),
-        rgba(172, 182, 229, 0.3)
+        rgba(222, 236, 234, 0.7),
+        rgba(223, 227, 243, 0.8)
       ),
       url("../img/banner1.jpg") center/cover no-repeat fixed;
     position: relative;
@@ -267,7 +373,7 @@ h4 {
   }
   .nav-menu .menu-top img {
     margin: 1rem 0;
-    width: 6rem;
+    width: 4rem;
     height: 4rem;
   }
   .nav-menu .menu-top .close-toggle {
@@ -285,7 +391,7 @@ h4 {
     background-color: #c9f5e6;
     flex-direction: column;
     width: 50rem;
-    margin-top: -1rem;
+    margin-top: -1.8rem;
     padding: 4rem 3rem;
     font-size: 4rem;
     height: 100vh;
@@ -321,9 +427,16 @@ h4 {
     background-color: rgba(0, 0, 0, 0.35);
     z-index: 70;
   }
+  .hero-content h1 span {
+    font-size: 5.5rem;
+  }
 }
 
 @media only screen and (max-width: 500px) {
+  .navigation {
+    position: fixed;
+    width: 100%;
+  }
   .nav-menu .nav-list {
     background-color: #c9f5e6;
     flex-direction: column;
@@ -334,14 +447,14 @@ h4 {
     height: 100vh;
     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
   }
-  h1 {
+  .nav-menu .menu-top h1 {
     right: 2rem;
     color: #3291eb;
     font-weight: 100;
     font-size: 4.5rem;
     background-color: #d2e5f6;
   }
-  span {
+  .nav-menu .menu-top h1 h1 span {
     color: #00be7b;
   }
   .nav-menu .menu-top {
@@ -367,11 +480,17 @@ h4 {
   .header {
     background: linear-gradient(
         to right,
-        rgba(116, 235, 213, 0.6),
-        rgba(172, 182, 229, 0.3)
+        rgba(222, 236, 234, 0.7),
+        rgba(223, 227, 243, 0.8)
       ),
       url("../img/banner2.jpg") center/cover no-repeat fixed;
     position: relative;
     z-index: 100;
+  }
+  .hero-content {
+    background: transparent;
+  }
+  .hero-content h1 span {
+    font-size: 3rem;
   }
 }
