@@ -1027,11 +1027,11 @@ h4 {
 
   .image-holder {
     margin-bottom: 2rem;
-    width: 100%;
+    width: 95%;
     height: 41rem;
   }
   .image-holder img {
-    width: 100%;
+    width: 95%;
     height: 51rem;
   }
   .title2 h3 {
@@ -1084,11 +1084,6 @@ h4 {
   }
   .glide__slides {
     height: 130vh;
-  }
-  .cart-details .btn-group {
-  }
-  .cart-details .ratting {
-    left: 5rem;
   }
 }
 
