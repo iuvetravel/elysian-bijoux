@@ -1030,7 +1030,7 @@ h4 {
     height: 41rem;
   }
   .image-holder img {
-    width: 33rem;
+    width: 100%;
     height: 51rem;
   }
   .title2 h3 {
@@ -1067,6 +1067,10 @@ h4 {
   }
   .cart-details h1 {
     font-size: 3rem;
+  }
+  .primary-title {
+    font-size: 3rem;
+    margin-bottom: 0;
   }
 }
 
