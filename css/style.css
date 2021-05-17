@@ -1171,7 +1171,18 @@ h4 {
     font-size: 5rem;
   }
   .offer-container p {
+    letter-spacing: 0.5rem;
     font-size: 2rem;
+  }
+  .special-offer {
+    position: relative;
+    height: 70rem;
+    background: linear-gradient(
+        to right,
+        rgba(14, 210, 247, 0.7),
+        rgba(178, 254, 250, 0.6)
+      ),
+      url(../img/banner33.jpg) top/cover no-repeat fixed;
   }
 }
 
