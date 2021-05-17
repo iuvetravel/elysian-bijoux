@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto:wght@100;400;500;700;900&display=swap");
 :root {
   --logo: #00be7b;
   --dark: #3291eb;
@@ -397,7 +397,7 @@ h4 {
 /* Cart Slider */
 
 .cart-slide {
-  padding-bottom: 30rem;
+  padding-bottom: 15rem;
   background-color: #fff;
   font-weight: 100;
 }
@@ -545,6 +545,64 @@ h4 {
 .glide__arrow:hover {
   background-color: #00be7b;
 }
+
+/* Special Offer */
+.special-offer {
+  position: relative;
+  height: 60rem;
+  background: linear-gradient(
+      to right,
+      rgba(14, 210, 247, 0.7),
+      rgba(178, 254, 250, 0.6)
+    ),
+    url(../img/banner3.jpg) top/cover no-repeat fixed;
+}
+.special-offer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.offer-container {
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #4ef0b7;
+  text-align: center;
+}
+.offer-container h1 {
+  font-size: 9rem;
+  letter-spacing: 1rem;
+  font-weight: bold;
+}
+.offer-container p {
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  letter-spacing: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+.offer-container a {
+  display: inline-block;
+  padding: 1rem 4rem;
+  color: #fff;
+  background-color: #00be7b;
+  border-radius: 10em;
+
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: all 0.5s ease;
+}
+.offer-container a:hover {
+  color: #00be7b;
+  background-color: #fff;
+  letter-spacing: 5px;
+}
 /* =========================================================================
 ========================================================================= */
 @media only screen and (max-width: 1200px) {
@@ -638,7 +696,7 @@ h4 {
     height: 16rem;
   }
   .image-holder img {
-    width: 28rem;
+    width: 38rem;
     height: 40rem;
   }
   .cart-details h1 {
@@ -686,13 +744,16 @@ h4 {
     margin-right: 2rem;
   }
   .glide__bullets {
-    top: 50%;
+    top: 75%;
     text-align: center;
   }
   .glide__bullets {
     display: grid;
     grid-template-columns: repeat(auto, 4, 1fr);
     width: 100%;
+  }
+  .glide {
+    height: 60rem;
   }
 } /* ======================================================================================
 ====================================================================================== */
@@ -848,6 +909,9 @@ h4 {
     width: 20rem;
     height: 25rem;
   }
+  .cart-slide {
+    padding-bottom: 10rem;
+  }
   .cart-details h1 {
     font-size: 2rem;
   }
@@ -894,13 +958,16 @@ h4 {
     margin-right: 1rem;
   }
   .glide__bullets {
-    top: 50%;
+    top: 70%;
     text-align: center;
   }
   .glide__bullets {
     display: grid;
     grid-template-columns: repeat(auto, 4, 1fr);
     width: 100%;
+  }
+  .glide {
+    height: 70rem;
   }
   .image-holder img {
     width: 33rem;
@@ -1009,7 +1076,7 @@ h4 {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   .cart-slide {
-    padding-bottom: 15rem;
+    padding-bottom: 28rem;
   }
   .glide__bullets {
     top: 85%;
@@ -1087,6 +1154,24 @@ h4 {
   }
   .glide__slides {
     height: 130vh;
+  }
+  .glide__bullets {
+    top: 90%;
+    text-align: center;
+  }
+  .glide__bullets {
+    display: grid;
+    grid-template-columns: repeat(auto, 4, 1fr);
+    width: 100%;
+  }
+  .glide {
+    height: 115rem;
+  }
+  .offer-container h1 {
+    font-size: 5rem;
+  }
+  .offer-container p {
+    font-size: 2rem;
   }
 }
 
