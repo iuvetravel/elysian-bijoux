@@ -1012,7 +1012,7 @@ h4 {
     padding-bottom: 15rem;
   }
   .glide__bullets {
-    top: 99%;
+    top: 85%;
     text-align: center;
   }
   .glide__bullets {
@@ -1022,6 +1022,7 @@ h4 {
   }
   .cart-like {
     grid-template-columns: 1fr;
+    margin-bottom: 1rem;
   }
 
   .image-holder {
@@ -1039,10 +1040,11 @@ h4 {
   }
   .btn-group {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
     align-items: center;
     margin: 1.5rem 0;
-    padding: 0;
+    padding: 1rem 3rem;
   }
   .btn-group button:not(:last-child) {
     margin-right: 0;
@@ -1072,6 +1074,21 @@ h4 {
   .primary-title {
     font-size: 3rem;
     margin-bottom: 0;
+  }
+  .cart-details .btn-group button {
+    font-weight: bold;
+  }
+  .cart-details .colors span {
+    width: 5rem;
+    height: 5rem;
+  }
+  .glide__slides {
+    height: 130vh;
+  }
+  .cart-details .btn-group {
+  }
+  .cart-details .ratting {
+    left: 5rem;
   }
 }
 
