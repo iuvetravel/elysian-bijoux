@@ -296,17 +296,15 @@ h4 {
 /* New Arrival Section */
 
 .section {
-  padding: 5rem 0;
+  margin-top: 8rem;
   background-color: #fff;
 }
 
-.arrivals {
-  padding: 2rem 0;
-}
 .title {
   text-align: center;
-  margin-bottom: 3rem;
+  margin: 8rem 0;
 }
+
 .primary-title {
   text-align: center;
   font-size: 4rem;
@@ -615,15 +613,13 @@ h4 {
 /* Blog News */
 .blog-container {
   background-color: #fff;
+  padding-top: 8rem;
 }
-.blog {
-  background-color: #fff;
-  margin-bottom: 5rem;
-}
+
 .blog-center {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3rem 4rem;
+  gap: 1rem 3rem;
 }
 .blog-box {
   position: relative;
